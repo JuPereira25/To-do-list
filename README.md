@@ -2,6 +2,8 @@
 
 Uma aplicação web simples e elegante para gerenciar suas tarefas diárias, desenvolvida com HTML, CSS e JavaScript puro.
 
+![Image](https://github.com/user-attachments/assets/44360008-cba6-456d-ac27-38071a4a223d)
+
 ## Funcionalidades
 
 - **Adicionar tarefas**: Digite uma nova tarefa e pressione Enter ou clique em "Adicionar"
