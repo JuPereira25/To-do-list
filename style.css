@@ -1,0 +1,127 @@
+/* Estilos básicos e reset */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #050a11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(115, 4, 143, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-color: #ddd;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Estilo do input e botão de adicionar */
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#add-task-btn {
+    padding: 10px 20px;
+    background-color: #5347ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-task-btn:hover {
+    background-color: #499eff;
+}
+
+/* Estilo da lista de tarefas (os blocos) */
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+}
+
+.task-item.completed {
+    background-color: #e0f7e9;
+    opacity: 0.7;
+}
+
+.task-item.completed span {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.task-text {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.task-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #888;
+    transition: color 0.3s;
+}
+
+.task-buttons .complete-btn:hover {
+    color: #0ab457;
+}
+
+.task-buttons .edit-btn:hover {
+    color: #ffb14a;
+}
+
+.task-buttons .delete-btn:hover {
+    color: #a72828;
+}
+
+/* Estilo para o campo de edição */
+.edit-task-input {
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #fff;
+    font-size: 0.8em;
+}
+
+/* Estilo para o item que está sendo arrastado */
+.task-item.dragging {
+    opacity: 0.5;
+}
